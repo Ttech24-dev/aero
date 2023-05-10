@@ -1,0 +1,14 @@
+{% extends 'contact.html' %}
+{% block title %}
+Flights
+{% endblock title %}
+{% block body %}
+<div class="gree">
+    <h2 style="color: goldenrod; margin-left: 25%; font-size: 45px;" >FLIGHTS</h2>
+</div>
+{% for flight in flights %}
+<div class="mann">
+    <a href="{% url 'control' flight.id %}">{{ flight }}</a>
+</div>
+{% endfor %}
+{% endblock body %}

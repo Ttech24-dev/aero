@@ -1,0 +1,42 @@
+{% extends "index.html" %}
+{% block title %}
+Register
+{% endblock title %}
+{% block body2 %}
+<div class="wrap">
+    <div class="wrap">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo"><a href="{% url 'base'%}">SKY <span style="color: gold;">RESERVE</a></span></h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="{% url 'index'%}">Home</a></li>
+                    <li><a href="{% url 'about'%}">About</a></li>
+                    <li><a href="{% url 'contact'%}">Contact</a></li>
+                    <li><a href="{% url 'blog'%}">Blog</a></li>
+                </ul>
+            </div>
+                
+                <div class="search">
+                    <input class="srch" type="search" name="" placeholder="Type to text">
+                    <button class="btn" type="button">Search</button>
+                </div>
+    
+            <div class="log">
+                <h2>SIGN-UP <span style="color: goldenrod;">HERE</span></h2>
+                <form action="{}">
+                    <input class="bax" type="name" name="firstname" placeholder="ENTER FIRST NAME">
+                    <input class="bax" type="name" name="lastname" placeholder="ENTER LAST NAME">
+                    <input class="bax" type="name" name="middlename" placeholder="ENTER MIDDLE NAME">
+                    <input class="bax" type="email" name="email" placeholder="ENTER EMAIL">
+                    <input class="bax" type="phone" name="number" placeholder="ENTER PHONE NUMBER">
+                    <input class="bax" type="password" name="Password" placeholder="ENTER PASSWORD">
+                    <input class="bax" type="password" name="password" placeholder="CONFIRM PASSWORD">
+                </form>
+                <button class="btn" type="button">SIGN-UP</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body2 %}

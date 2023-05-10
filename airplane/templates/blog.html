@@ -1,0 +1,33 @@
+{% extends "contact.html" %}
+{% block title %}
+Blog
+{% endblock title %}
+{% block body2 %}
+    <div class="wrapp">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo"><a href="{% url 'base'%}">SKY <span style="color: gold;">RESERVE</a></span></h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="{% url 'index'%}">Home</a></li>
+                    <li><a href="{% url 'about'%}">About</a></li>
+                    <li><a href="{% url 'contact'%}">Contact</a></li>
+                    <li><a href="{% url 'blog'%}">Blog</a></li>
+                </ul>
+            </div>
+            <button class="btn" style="margin-left: 210px;"><a href="{% url 'logout'%}">Logout</a></button>
+            {% block body %}
+            <div class="gree">
+                <h2 style="color: goldenrod;">BLOGS</h2>
+            </div>
+            {% for post in posts %}
+            <div class="con">
+                {{ post }}
+            </div>
+            {% endfor %}
+            {% endblock %}
+        </div>
+    </div>
+{% endblock body2 %}
+

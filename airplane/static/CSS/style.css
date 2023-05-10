@@ -1,0 +1,347 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.6)50%, rgba(0,0,0,0.6)50%), url('../images/flight2.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.navbar{
+    width: 1200px;
+    height: 85px;
+    margin: auto;
+}
+
+.icon{
+    width: 300px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: aqua;
+    font-size: 25px;
+    font-family: sans-serif;
+    float: left;
+    padding-left: 20px;
+    padding-right: 25px;
+    padding-top: 30px;
+
+}
+
+.logo a{
+    text-decoration: none;
+    color: aqua;
+}
+
+.menu{
+    width: 500px;
+    height: 70px;
+    float: left;
+    padding-left: 30px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style-type: none;
+    margin-left: 62px;
+    margin-top: 35px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: beige;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: blue;
+}
+
+.search{
+    width: 300px;
+    float: left;
+    margin-left: 40px;
+}
+
+.srch{
+    font-family: monospace;
+    font-style: italic;
+    width: 200px;
+    height: 30px;
+    border: 1px solid gold;
+    margin-top: 25px;
+    color: burlywood;
+    border: none;
+    font-size: 16px;
+    float: left;
+    background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.btn{
+    width: 100px;
+    height: 30px;
+    float: left;
+    background: aqua;
+    border: 2px solid aqua;
+    margin-top: 10px;
+    color: black;
+    font-size: 15px;
+    border-radius: 30px;
+    text-align: center;
+    margin-top: 26px;
+}
+
+.btn a{
+    text-decoration: none;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.btn:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+    background: gold;
+    border: 2px solid gold;
+    transition: 0.4s;
+}
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: aliceblue;
+    float: right;
+    position: relative;
+    
+}
+
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    
+}
+
+.content h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: aqua;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.content .cn a{
+    text-decoration: none;
+    color: black;
+    transition: .3s ease;
+}
+
+.cn:hover{
+    background-color: aliceblue;
+    
+}
+
+.content span{
+    color:goldenrod;
+    font-size: 60px;
+}
+
+.form {
+    width: 250px;
+    height: 280px;
+    background: linear-gradient(rgba(0,0,0,0.7)50%, rgba(0,0,0,0.7)50%);
+    position: absolute;
+    top: -20px;
+    left: 870px;
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 12%;
+    float: left;
+
+}
+
+.form h2{ 
+    width: 220px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: aliceblue;
+    margin-left: 10px;
+    
+}
+
+.form .inn{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid gold;
+    border-top: none;
+    border-left: none;
+    color: aliceblue;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+
+.form .inn:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: burlywood;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+.btnn{
+    width: 240px;
+    height: 40px;
+    background: aqua;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: aliceblue;
+}
+
+.btnn:hover{
+    background: wheat;
+    color: aqua;
+}
+
+.btnn a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.form .link{
+    font-family: cursive;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.form .link a{
+    text-decoration: none;
+    color: gold;
+}
+
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.icons a{
+    text-decoration: none;
+    color: aliceblue;
+    
+}
+
+
+
+.icons ion-icon{
+    color: aliceblue;
+    font-size: 30px;
+    padding-left: 14px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+    margin-left: 5%;
+
+}
+
+.icons ion-icon:hover{
+    color: gold;
+
+}
+
+#menu-icon{
+    font-size: 25px;
+    color: aliceblue;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+
+}
+
+@media (max-width: 1280px){
+    main{
+        padding: 14px 2%;
+        transition: .2s;
+    }
+    .menu ul li a{
+        padding: 5px 0;
+        margin: 0px 20px;
+    }
+}
+
+@media (max-width: 1280px){
+    #menu-icon{
+        display: block;
+        transition: .2s;
+    }
+    .menu{
+        position: absolute;
+        top: 100%;
+        right: 2%;
+        width: 270px;
+        height: 29vh;
+        background: goldenrod;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all .50s ease;
+    }
+
+    .menu a{
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all .50s ease;
+        
+    }
+}

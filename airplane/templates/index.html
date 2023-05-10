@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="gree">
+    <h2>HELLO <span>{{request.user.first_name }}</span></h2>
+    <h2 style="color:chocolate">WELCOME TO ASHI'S <span style="color: aqua;">SKY</span><span> RESERVE</span></h2>
+</div>
+{% endblock body %}
+{% block button %}
+<button class="btn" style="margin-left: 210px;"><a href="{% url 'logout'%}">Logout</a></button>
+{% endblock button %}
